@@ -1,0 +1,21 @@
+@mixin colors() {
+
+    // theme colors 
+    --light-green: #74a35d;
+    --nature-green: #309255;
+    --orange-color: rgb(255, 170, 0);
+    --bg-dark-green: #292f35;
+    --bg_other-body: #e7f8ee;
+
+    // border  colors
+    --border-color-1: #a9d6e5;
+    --border-color-2: #d0ecf5;
+    --border-color-green: #81b29a;
+
+    // text colors 
+    --text-color-grey: #6c757d;
+
+    // common colors 
+    --common-white: #fff;
+    --common-black: #000;
+}

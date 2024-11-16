@@ -1,0 +1,237 @@
+<!-- Home Top Start -->
+<div class="home-top">
+  <!-- Background Shape -->
+  <img class="home-top-shape arrow-shape" src="../assets/images/shape-8.png" />
+  <!-- Top Content Container -->
+  <div class="home-top-content">
+    <!-- Top Text Content -->
+    <div class="text-content">
+      <span class="color-nature-green">{{ "home.top.start" | translate }}</span>
+      <div class="mt-3 mb-5">
+        <h2>
+          <p>{{ "home.top.learning" | translate }}</p>
+          <span class="color-nature-green">
+            {{ "home.top.career" | translate }}
+            <div>
+              <img
+                class="arrow-shape"
+                src="../assets/images/shape-4.webp"
+              /></div
+          ></span>
+        </h2>
+      </div>
+      <p class="sub-txt mb-5">
+        {{ "home.top.subTxt" | translate }}
+      </p>
+      <a *ngIf="!authService.isSignin" class="btn btn-success py-3 px-5" routerLink="/auth/registration">
+        {{ "home.top.registe" | translate }}
+      </a>
+    </div>
+    <!-- Top Image -->
+    <div class="image-content">
+      <img src="../assets/images/slider-1.webp" />
+    </div>
+  </div>
+</div>
+<!-- Home Top End -->
+
+<!-- Home Search Container Start -->
+<div class="search-container">
+  <h2>
+    <span> {{ "home.body.all" | translate }} </span>
+    <span class="color-nature-green">
+      {{ "home.body.courses" | translate }}
+    </span>
+    {{ "home.body.edule" | translate }}
+    <span></span>
+  </h2>
+  <form class="search-box">
+    <input
+      type="text"
+      placeholder="
+        {{ 'home.body.search' | translate }}"
+    />
+    <button>
+      <svg-icon src="../../../assets/images/svg/search.svg"></svg-icon>
+    </button>
+  </form>
+</div>
+<!-- Home Search Container End -->
+
+<!-- Home Carousel Container Start -->
+<div class="carousel-box">
+  <ul>
+    <li>
+      <button>
+        {{ "home.body.ui" | translate }}
+      </button>
+    </li>
+    <li>
+      <button>
+        {{ "home.body.develope" | translate }}
+      </button>
+    </li>
+    <li>
+      <button>
+        {{ "home.body.science" | translate }}
+      </button>
+    </li>
+    <li>
+      <button>
+        {{ "home.body.business" | translate }}
+      </button>
+    </li>
+  </ul>
+  <button
+    class="arrow-btn arrow-btn-previous"
+  >
+    ➜
+  </button>
+  <button class="arrow-btn arrow-btn-next">
+    ➜
+  </button>
+</div>
+<!-- Home Carousel Container End -->
+
+<!-- My Courses Start -->
+<div class="my-courses-box" *ngIf="showItem">
+  <h3 class="m-1">{{ "home.body.myCourse" | translate }}</h3>
+  <div class="my-courses-box-item" *ngFor="let item of items">
+    <h6>{{ "home.body.courseType" | translate }} {{ item.type }}</h6>
+    <p>{{ "home.body.coachName" | translate }}: {{ item.coach }}</p>
+    <p>{{ item.lectures }} {{ "home.body.lectures" | translate }}</p>
+  </div>
+</div>
+<!-- My Courses End -->
+
+<!-- Courses Container Start -->
+<div class="courses-list">
+  <div class="row row-cols-1 row-cols-lg-3">
+    <!-- Course Item  -->
+    <div class="course-card" *ngFor="let course of courses; let i = index">
+      <!-- Top -->
+      <img [src]="course.imagePath" />
+      <button class="btn btn-success p-2" (click)="onAddcourse(i)">
+        {{ "home.body.startNow" | translate }}
+      </button>
+      <!-- Body -->
+      <div class="course-card-body">
+        <a>
+          <img [src]="course.profileImg" />
+          <p>{{ course.coach }}</p>
+        </a>
+        <button class="btn btn-outline-success px-3 py-2">{{ course.type }}</button>
+      </div>
+      <h6>{{ course.description }}</h6>
+      <div class="course-card-body">
+        <div>
+          <svg-icon src="../../../assets/images/svg/clock.svg"></svg-icon>
+          <p>{{ "home.body.hour" | translate }}</p>
+        </div>
+        <div>
+          <svg-icon src="../../../assets/images/svg/book.svg"></svg-icon>
+          <p>{{ course.lectures }}</p>
+        </div>
+      </div>
+      <!-- Footer -->
+      <div
+        class="d-flex align-items-center justify-content-between p-3 mt-3 course-card-footer"
+      >
+        <div>
+          <span class="color-nature-green fw-bold">${{ course.price }}</span>
+          <span class="off-txt mx-2">{{ "home.body.price" | translate }}</span>
+        </div>
+        <div>
+          <span>{{ "home.body.star" | translate }}</span>
+          <span class="stars mx-2">&#9733;&#9733;&#9733;&#9733;&#9734;</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Courses Container End -->
+
+<!-- Other-Courses Button -->
+<div class="d-flex justify-content-center">
+  <button class="btn btn-outline-success py-3 px-5 m-5">
+    {{ "home.body.otherCourse" | translate }}
+  </button>
+</div>
+
+<!-- Call To Action Template -->
+<call-to-action></call-to-action>
+
+<!-- Home Instructor Call-To-Action Container -->
+<div class="instructor-box">
+  <img class="cat-shape" src="../assets/images/shape-12.png" alt="Shape" />
+  <div class="box-content">
+    <h5 class="color-nature-green mb-4">
+      {{ "home.body.instruct" | translate }}
+    </h5>
+    <h2>
+      {{ "home.body.joinUs" | translate }}
+      <span class="color-nature-green">{{
+        "home.body.asInstructor" | translate
+      }}</span>
+    </h2>
+  </div>
+  <img class="arrow-shape" src="../assets/images/shape-13.svg" alt="Shape" />
+  <button>{{ "home.body.drop" | translate }}</button>
+</div>
+
+<!-- How-it-work Start -->
+<div class="m-5 d-flex flex-column align-items-center">
+  <h5 class="color-nature-green mb-2">
+    {{ "home.body.overThan" | translate }}
+  </h5>
+  <h2>
+    {{ "home.body.how" | translate }}
+    <span class="color-nature-green">{{ "home.body.work" | translate }}</span>
+  </h2>
+  <img
+    class="arrow-shape"
+    src="../assets/images/shape-4.webp"
+    style="width: 150px"
+  />
+</div>
+<div class="columns-container">
+  <!-- Column 1 -->
+  <div class="columns-container-item">
+    <span class="item-icon">
+      <svg-icon
+        class="color-light-green"
+        src="../../../assets/images/svg/search.svg"
+      ></svg-icon>
+    </span>
+    <h3>{{ "home.body.find" | translate }}</h3>
+    <span class="sub--txt mt-3">{{ "home.body.findDesc" | translate }}</span>
+  </div>
+  <!-- Arrow Image -->
+  <img class="arrow" src="../assets/images/shape-17.png" alt="Shape" />
+  <!-- Column 2 -->
+  <div class="columns-container-item">
+    <span class="item-icon">
+      <svg-icon
+        class="color-light-green"
+        src="../../../assets/images/svg/journal.svg"
+      ></svg-icon>
+    </span>
+    <h3>{{ "home.body.bookOn" | translate }}</h3>
+    <span class="sub--txt mt-3">{{ "home.body.bookDesc" | translate }}</span>
+  </div>
+  <!-- Arrow Image -->
+  <img class="arrow" src="../assets/images/shape-17.png" alt="Shape" />
+  <!-- Column 3 -->
+  <div class="columns-container-item">
+    <span class="item-icon">
+      <svg-icon
+        class="color-light-green"
+        src="../../../assets/images/svg/award.svg"
+      ></svg-icon>
+    </span>
+    <h3>{{ "home.body.getCrt" | translate }}</h3>
+    <span class="sub--txt mt-3">{{ "home.body.getCrtDesc" | translate }}</span>
+  </div>
+</div>
+<!-- How-it-work End -->

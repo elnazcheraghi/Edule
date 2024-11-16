@@ -1,0 +1,160 @@
+<!-- Form Title -->
+<div class="mb-3">
+  <span class="mx-2">{{ "auth.rgs.haveAcoount" | translate }}</span>
+  <a class="color-nature-green" routerLink="/auth/sign-in">{{
+    "auth.rgs.signin" | translate
+  }}</a>
+</div>
+<h3 class="mb-5">
+  {{ "auth.rgs.rgsWord" | translate }}
+  <span class="color-nature-green">
+    {{ "auth.rgs.now" | translate }}
+  </span>
+</h3>
+
+<!-- Registration Form Start -->
+<form
+  class="register-form"
+  [formGroup]="registrationForm"
+  (ngSubmit)="onCreateAccount()"
+>
+  <!-- Form Text And Number Inputs -->
+  <div class="form-inputs" [formGroup]="userDataForm">
+    <input
+      type="text"
+      name="name"
+      id="name"
+      placeholder="{{ 'auth.rgs.nameInput' | translate }}"
+      formControlName="name"
+    />
+    <span
+      class="error-txt"
+      *ngIf="submitted && userDataForm.get('name')?.hasError('required')"
+    >
+      {{ "auth.rgs.nameRequire" | translate }}
+    </span>
+    <input
+      type="email"
+      name="email"
+      id="email"
+      placeholder="{{ 'auth.rgs.emailInput' | translate }}"
+      formControlName="email"
+    />
+    <span
+      class="error-txt"
+      *ngIf="submitted && userDataForm.get('email')?.hasError('required')"
+    >
+      {{ "auth.rgs.emailRequire" | translate }}
+    </span>
+    <span
+      class="error-txt"
+      *ngIf="submitted && userDataForm.get('email')?.hasError('email')"
+    >
+      {{ "auth.rgs.emailPattern" | translate }}
+    </span>
+    <input
+      type="password"
+      name="password"
+      id="password"
+      placeholder="{{ 'auth.rgs.passInput' | translate }}"
+      formControlName="password"
+    />
+    <span
+      class="error-txt"
+      *ngIf="submitted && userDataForm.get('password')?.hasError('required')"
+    >
+      {{ "auth.rgs.errInvalid" | translate }}
+    </span>
+    <span
+      class="error-txt"
+      *ngIf="submitted && userDataForm.get('password')?.hasError('pattern')"
+    >
+      {{ "auth.rgs.errPassPattern" | translate }}
+    </span>
+    <span
+      class="error-txt"
+      *ngIf="submitted && userDataForm.get('password')?.hasError('minlength')"
+    >
+      {{ "auth.rgs.errLength" | translate }}
+    </span>
+    <input
+      type="password"
+      name="confirm"
+      id="confirm"
+      placeholder="{{ 'auth.rgs.confirm' | translate }}"
+      formControlName="confirm"
+    />
+    <span
+      class="error-txt"
+      *ngIf="submitted &&
+        userDataForm.get('userData')?.hasError('PasswordNoMatch') &&      
+        userDataForm.get('password')?.valid
+      "
+    >
+      {{ "auth.rgs.errNotMatch" | translate }}
+    </span>
+  </div>
+  <!-- Form Date Input -->
+  <div class="form-inputs">
+    <label class="mx-4" for="birth">
+      {{ "auth.rgs.dateLable" | translate }}
+    </label>
+    <input
+      type="date"
+      name="birth"
+      id="birth"
+      formControlName="birth"
+      lang="fa"
+    />
+  </div>
+  <!-- Form Radio Inputs -->
+  <div class="form-check form-check-inline">
+    <span class="m-1">{{ "auth.rgs.gender" | translate }}</span>
+    <input
+      class="m-1"
+      type="radio"
+      name="gender"
+      id="male"
+      value="male"
+      formControlName="gender"
+    />
+    <label class="m-1" for="male">{{ "auth.rgs.male" | translate }}</label>
+    <input
+      class="m-1"
+      type="radio"
+      name="gender"
+      id="female"
+      value="female"
+      formControlName="gender"
+    />
+    <label class="m-1" for="female">{{ "auth.rgs.female" | translate }}</label>
+  </div>
+  <!-- Form Checkbox -->
+  <div class="mx-4">
+    <input
+      type="checkbox"
+      name="student"
+      id="student"
+      formControlName="isStudent"
+    />
+    <label class="mx-3" for="student">
+      {{ "auth.rgs.isStudent" | translate }}
+    </label>
+  </div>
+  <!-- Form File Input -->
+  <div class="form-inputs">
+    <label class="mx-4" for="photo">
+      {{ "auth.rgs.fileInput" | translate }}
+    </label>
+    <input
+      class="py-3"
+      type="file"
+      name="photo"
+      id="photo"
+      formControlName="file"
+    />
+  </div>
+  <button type="submit" class="btn btn-success mt-3">
+    {{ "auth.rgs.createAccount" | translate }}
+  </button>
+</form>

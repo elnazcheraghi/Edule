@@ -1,0 +1,77 @@
+.footer {
+  background-color: var(--bg_other-body);
+  padding: 3% 15%;
+  &-content {
+    display: grid;
+    grid-template-columns: repeat(4, 18vw);
+    justify-content: space-between;
+    .contact {
+      .brand-img {
+        height: 25px;
+      }
+      .sub-txt {
+        font-size: small;
+      }
+    }
+    .list-content {
+      color: #6c757d;
+      & > li {
+        padding-bottom: 0.5rem;
+      }
+    }
+    .subscribe {
+      &-input {
+        border: none;
+        border-radius: 5px;
+        padding: 1rem;
+        width: 18vw;
+        margin: 1rem 0;
+        &::placeholder {
+          color: black;
+        }
+      }
+      &-button {
+        background-color: var(--nature-green);
+        color: #fff;
+        padding: 1rem;
+        border: none;
+        border-radius: 5px;
+      }
+    }
+  }
+}
+
+.footer-bottom {
+  background-color: var(--bg-dark-green);
+  &-content {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: space-between;
+    color: #fff;
+    font-size: 12px;
+    padding: var(--main-content_padding);
+    a {
+      margin-inline-start: 5px;
+    }
+    span:not(:last-child) {
+      margin-inline-end: 5px;
+    }
+  }
+}
+
+@media only screen and (max-width: 930px) {
+  .footer-content {
+    gap: 3rem;
+  }
+  
+  .list-content {
+    font-size: small;
+  }
+
+  .contact,
+  .subscribe,
+  .footer-bottom {
+    display: none;
+  }
+}

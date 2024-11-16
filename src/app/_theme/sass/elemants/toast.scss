@@ -1,0 +1,20 @@
+@mixin toast() {
+  .p-toast .p-toast-message {
+    margin-bottom: 1rem;
+    border-radius: 6px;
+    .p-toast-message-content {
+      padding: 1rem;
+      color: var(--common-white);
+      button,
+      .p-icon {
+        display: none;
+      }
+    }
+    &.p-toast-message-error {
+      background-color: rgb(255, 53, 53);
+    }
+    &.p-toast-message-success {
+      background-color: var(--light-green);
+    }
+  }
+}

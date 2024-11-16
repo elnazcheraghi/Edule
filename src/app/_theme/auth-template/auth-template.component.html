@@ -1,0 +1,42 @@
+<!-- Page Top Start -->
+<div class="auth-top">
+  <!-- Background Shapes -->
+  <div class="shapes">
+    <img src="../assets/images/shape-23.webp" />
+    <img class="shape--24" src="../assets/images/shape-24.webp" />
+  </div>
+  <!-- Top Content -->
+  <div class="auth-top-content">
+    <div class="breadcrumb">
+      <div class="mb-4">
+        {{ "auth.top.home" | translate }} //
+        <span class="color-nature-green ms-2">{{
+          "auth.top.linkName" | translate
+        }}</span>
+      </div>
+      <h2>
+        {{ "auth.top.registe" | translate }}
+        <span class="color-nature-green">{{
+          "auth.top.form" | translate
+        }}</span>
+      </h2>
+    </div>
+    <img src="../assets/images/images.png" />
+  </div>
+</div>
+
+<!-- Form Content Container -->
+<div class="form">
+  <!-- Container Image -->
+  <div class="form-img">
+    <img src="../assets/images/register-login.webp" />
+    <span class="circle-shape"></span>
+  </div>
+  <!-- Form Container -->
+  <div>
+    <router-outlet></router-outlet>
+  </div>
+</div>
+
+<!-- Call To Action Template -->
+<call-to-action></call-to-action>

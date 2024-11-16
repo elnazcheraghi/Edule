@@ -1,0 +1,57 @@
+<!-- Form Title -->
+<h3 class="mb-5">
+  {{ "auth.signin.signin" | translate }}
+  <span class="mx-1 color-nature-green">{{
+    "auth.signin.now" | translate
+  }}</span>
+</h3>
+
+<!-- Sign in Form -->
+<form [formGroup]="signinForm" (ngSubmit)="onSignin()">
+  <div class="form-inputs">
+    <input
+      type="email"
+      name="userEmail"
+      id="userEmail"
+      placeholder="{{ 'auth.signin.email' | translate }}"
+      formControlName="userEmail"
+    />
+    <span
+      class="error-txt"
+      *ngIf="submitted && signinForm.get('userEmail')?.hasError('required')"
+    >
+      {{ "auth.rgs.emailRequire" | translate }}
+    </span>
+    <span
+      class="error-txt"
+      *ngIf="submitted && signinForm.get('userEmail')?.hasError('email')"
+    >
+      {{ "auth.rgs.emailPattern" | translate }}
+    </span>
+    <input
+      type="password"
+      name="userPass"
+      id="userPass"
+      placeholder="{{ 'auth.signin.pass' | translate }}"
+      formControlName="userPass"
+    />
+    <span
+      class="error-txt"
+      *ngIf="submitted && signinForm.get('userPass')?.hasError('required')"
+    >
+      {{ "auth.rgs.errInvalid" | translate }}
+    </span>
+    <span
+      class="error-txt"
+      *ngIf="submitted && signinForm.get('userPass')?.hasError('minlength')"
+    >
+      {{ "auth.rgs.errLength" | translate }}
+    </span>
+  </div>
+  <button
+    type="submit"
+    class="btn btn-success m-3 px-5 py-2"
+  >
+    {{ "auth.signin.btnSignin" | translate }}
+  </button>
+</form>

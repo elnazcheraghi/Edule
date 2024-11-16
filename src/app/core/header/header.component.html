@@ -1,0 +1,117 @@
+<!-- Header Top Navbar -->
+<div class="top-navbar">
+  <div class="top-navbar-content">
+    <!-- Off Text Container-->
+    <div>
+      <span>{{ "header.bar.offTxt" | translate }}</span>
+      <span class="mx-2 color-light-green">{{
+        "header.bar.people" | translate
+      }}</span>
+    </div>
+    <!-- Contact Container -->
+    <div class="d-flex">
+      <div class="mx-3">
+        <svg-icon
+          class="color-light-green mx-1"
+          src="../assets/images/svg/phone.svg"
+        ></svg-icon>
+        <span>{{ "header.bar.phone" | translate }}</span>
+      </div>
+      <div class="mx-3">
+        <svg-icon
+          class="mx-1 color-light-green"
+          src="../assets/images/svg/envelop.svg"
+        ></svg-icon>
+        <span>{{ "header.bar.emailAddress" | translate }}</span>
+      </div>
+    </div>
+    <!-- Social Media Container -->
+    <div class="d-flex">
+      <a class="mx-3">
+        <svg-icon src="../assets/images/svg/facebook.svg"></svg-icon>
+      </a>
+      <a class="mx-3">
+        <svg-icon src="../assets/images/svg/twitter.svg"></svg-icon>
+      </a>
+      <a class="mx-3">
+        <svg-icon src="../../../assets/images/svg/skype.svg"></svg-icon>
+      </a>
+      <a class="mx-3">
+        <svg-icon src="../../../assets/images/svg/insta.svg"></svg-icon>
+      </a>
+    </div>
+  </div>
+</div>
+
+<!-- Header Navigation -->
+<div class="header" sticky>
+  <div class="header-content">
+    <!-- Header Brand -->
+    <a routerLink="/" >
+      <img  class="brand-img" src="../assets/images/brand.png" />
+    </a>
+    <!-- Header Menu -->
+    <ul class="nav-menu">
+      <li>
+        <a routerLink="/">{{ "header.nav.home" | translate }}</a>
+      </li>
+      <li>
+        <a>{{ "header.nav.allCourse" | translate }}</a>
+        <ul class="dropdown-menu">
+          <li class="dropdown-menu-item">
+            <a>{{ "header.navDrop.courses" | translate }}</a>
+          </li>
+          <li class="dropdown-menu-item">
+            <a>{{ "header.navDrop.courseDetail" | translate }}</a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a>{{ "header.nav.pages" | translate }}</a>
+        <ul class="dropdown-menu">
+          <li class="dropdown-menu-item">
+            <a>{{ "header.navDrop.about" | translate }}</a>
+          </li>
+          <li class="dropdown-menu-item">
+            <a>{{ "header.navDrop.traffic" | translate }}</a>
+          </li>
+          <li class="dropdown-menu-item">
+            <a>{{ "header.navDrop.faq" | translate }}</a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a>{{ "header.nav.blog" | translate }}</a>
+        <ul class="dropdown-menu">
+          <li class="dropdown-menu-item">
+            <a>{{ "header.navDrop.blog" | translate }}</a>
+          </li>
+          <li class="dropdown-menu-item">
+            <a>{{ "header.navDrop.blogDetail" | translate }}</a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a>{{ "header.nav.contact" | translate }}</a>
+      </li>
+    </ul>
+    <!-- Header Sign Up/In Links -->
+    <div class="d-flex align-items-center">
+      <a *ngIf="!!authService.isSignin">{{ userName }}</a>
+      <a *ngIf="!authService.isSignin" routerLink="/auth/sign-in">{{
+        "header.nav.signin" | translate
+      }}</a>
+      <span class="btn btn-light mx-1 p-1">
+        <a routerLink="/auth/registration" *ngIf="!authService.isSignin">{{
+          "header.nav.signup" | translate
+        }}</a>
+        <a *ngIf="!!authService.isSignin" (click)="signOut()">{{
+          "header.nav.signout" | translate
+        }}</a>
+      </span>
+      <button class="btn btn-outline-success p-1" (click)="change($event)">
+        {{ "header.nav.language" | translate }}
+      </button>
+    </div>
+  </div>
+</div>

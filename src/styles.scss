@@ -1,0 +1,27 @@
+@import "bootstrap/scss/mixins";
+@import "bootstrap/scss/functions";
+@import "bootstrap/scss/variables";
+@import "bootstrap/scss/mixins";
+@import "bootstrap/scss/bootstrap-reboot";
+@import "bootstrap/scss/bootstrap-grid";
+@import "bootstrap/scss/_tables";
+@import "bootstrap/scss/utilities";
+
+@import "app/_theme/sass/variables/colors.scss";
+@import "app/_theme/sass/rtl-theme.scss";
+@import "app/_theme/sass/theme-styles.scss";
+@import "app/_theme/sass/elemants/toast.scss";
+
+@import "assets/fonts/Sahel/style.css";
+
+body {
+  @include theme-styles();
+  @include rtl-theme();
+  @include toast();
+  @include colors();
+}
+
+.wrapper {
+  margin: 0;
+}
+

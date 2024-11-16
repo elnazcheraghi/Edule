@@ -1,0 +1,15 @@
+@font-face {
+  font-family: sahel;
+  src: url("Sahel.woff") format("woff"), url("Sahel.woff2") format("woff2"),
+    url("Sahel.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: sahel;
+  src: url("Sahel-Bold.woff2") format("woff2"),
+    url("Sahel-Bold.woff") format("woff"),
+    url("Sahel-Bold.ttf") format("truetype");
+  font-weight: bold;
+}

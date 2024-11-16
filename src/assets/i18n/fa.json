@@ -1,0 +1,166 @@
+{
+    "header": {
+        "bar": {
+            "offTxt": "تمام دوره ها با ۲۸٪ تخفیف",
+            "people": "برای فارسی زبان ها",
+            "emailAddress": "address@gmail.com",
+            "phone": "(۹۷۰)۲۷۶-۱۴۱۳"
+        },
+
+        "nav": {
+            "home": "خانه",
+            "allCourse": "همه دوره ها",
+            "pages": "صفحه ها",
+            "blog": "بلاگ",
+            "contact": "ارتباط با ما",
+            "signin": "ورود",
+            "signup": "عضویت",
+            "signout": "خروج",
+            "language": "انگلیسی"
+        },
+        "navDrop": {
+            "courses": "دوره ها",
+            "courseDetail": "جزئیات دوره",
+            "about": "درباره ما",
+            "traffic": "مدرس های ما",
+            "faq": "سوالات",
+            "blog": "بلاگ",
+            "blogDetail": "جزئیات بلاگ"
+        }
+    },
+
+    "home": {
+        "top": {
+            "start": "دوره مورد علاقتو شروع کن",
+            "learning": "همین الان هر جایی که هستی",
+            "career": "آینده روشنت رو بساز!",
+            "subTxt": "برای تمامی دوره ها مدرک معتبر بین المللی و قابل استناد صادر می شود.",
+            "registe": "عضویت"
+        },
+        "body": {
+            "all": "همه",
+            "courses": "دوره های",
+            "edule": "سایت",
+            "search": "جستجو دوره",
+            "ui": "رابط کاربری",
+            "develope": "توسعه دهنده",
+            "science": "علم داده",
+            "business": "بیزینس",
+            "myCourse": "ٔدوره های من",
+            "courseType": "دوره:",
+            "coachName": "مدرس",
+            "lectures": "جلسه",
+            "startNow": "شروع کن",
+            "hour": " ۸ ساعت",
+            "price": "۵۰۰ تومان",
+            "star": "۴.۹",
+            "otherCourse": "سایر دوره ها",
+            "instruct": "تدریس کن",
+            "joinUs": "بعنوان مدرس",
+            "asInstructor": "به ما بپیوندید",
+            "drop": "اطلاعاتت رو بفرست",
+            "overThan": "بیشتر از ۱۲۳۵ دوره",
+            "how": "چطوری",
+            "work": "انجام بدم؟",
+            "find": "دوره مدنظرتو پیدا کن",
+            "findDesc": "بهترین و کامل ترین اپیلیکشن جامع",
+            "bookOn": "ثبت نامتو کامل کن",
+            "bookDesc": "بهترین و کامل ترین اپیلیکشن جامع",
+            "getCrt": "مدرکتو بگیر",
+            "getCrtDesc": "بهترین و کامل ترین اپیلیکشن جامع"
+            
+        }
+    }, 
+
+    "appDownload": {
+        "ready": "برای شروع آماده ای؟",
+        "download": "اپیکیشن ما رو دانلود کن",
+        "start": "تا راحت تر شروعش کنی."
+    },
+
+    "auth": {
+        "top": {
+            "home": "خانه",
+            "linkName": "ثبت نام",
+            "registe": "فرم",
+            "form": "ثبت نام"
+        },
+        "signin": {
+            "signin": "فرم",
+            "now": "ورود",
+            "email": "ایمیل",
+            "pass": "رمز عبور",
+            "btnSignin": "ورود"
+        },
+        "rgs": {
+            "haveAcoount": "عضو هستید؟",
+            "signin": "ورود",
+            "rgsWord": "فرم",
+            "now": "ثبت نام",
+            "nameInput": "نام و نام خانوادگی*",
+            "nameRequire": "نام را وارد کنید!",
+            "emailInput": "ایمیل*",
+            "emailRequire": "ایمیل را وارد کنید!",
+            "emailPattern": "ایمیل نادرست است!",
+            "passInput": "رمز عبور*",
+            "errInvalid": "رمز را وارد کنید!",
+            "errPassPattern": "از اعداد و حروف بزرگ و کوچک انگلیسی استفاده کنید!",
+            "errLength": "حداقل ۶ کاراکتر",
+            "confirm": "تکرار رمز عبور*",
+            "errNotMatch": "رمز مطابقت ندارد!",
+            "dateLable": "تاریخ تولد",
+            "gender": "جنسیت:",
+            "male": "مرد",
+            "female": "زن",
+            "isStudent": "دانش آموز هستید؟",
+            "fileInput": "عکس تان را اضافه کنید",
+            "createAccount": "ایجاد حساب کاربری"
+        }
+    },
+
+    "footer": {
+        "main": {
+            "contact": {
+                "ct": "Caribbean Ct",
+                "subTxt": "هایمارکت ویرجینیا (VA)",
+                "emailAddress": "address@gmail.com",
+                "phone": "(۹۷۰) ۲۷۶-۱۴۱۳"
+            },
+            "category": {
+                "~": "دسته بندی",
+                "creative": "نوشته های خلاق",
+                "film": "فیلم و ویدیو",
+                "graphic": "طراحی گرافیک",
+                "ui": "UI/UX طراحی",
+                "business": "آنالیز کسب و کار",
+                "marketing": "بازاریابی"
+            },
+            "quick-links": {
+                "~": "لینک های سریع",
+                "privacy": "حریم خصوصی",
+                "discuss": "گفتگو",
+                "term": "شرایط و قوانین",
+                "support": "حمایت مشتری",
+                "faq": "سوالات"
+            },
+            "subscribe": {
+                "~": "خبرنامه",
+                "lorem": "این یک متن فارسی بدون محتوای خاص می باشد.",
+                "emailHere": "ایمیلت رو وارد کن",
+                "buttonSbc": "خبرنامه رو دنبال کن"
+            }
+        },
+        "bottom": {
+            "term": "شرایط خدمت رسانی",
+            "privacy": "سیاست حفظ حریم خصوصی",
+            "sitemap": "نقشه سایت",
+            "security": "امنیت",
+            "yearDate": "۱۴۰۳",
+            "edule": "EDULE",
+            "loveWord": "ساخته شده با عشق توسط",
+            "codecanva": "Codecanva"
+        }
+    }
+}
+
+

@@ -1,0 +1,12 @@
+@mixin rtl-theme() {
+  &.rtl-theme {
+    text-align: right;
+    font-family: sahel;
+    .arrow {
+      transform: rotate(180deg);
+    }
+    .arrow-shape {
+        transform: rotateY(180deg);
+    }
+  }
+}

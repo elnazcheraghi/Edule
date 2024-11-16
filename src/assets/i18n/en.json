@@ -1,0 +1,164 @@
+{
+    "header": {
+        "bar": {
+            "offTxt": "All course 28% off",
+            "people": "Liberian people's.",
+            "emailAddress": "address@gmail.com",
+            "phone": "(970) 276-1413"
+        },
+
+        "nav": {
+            "home": "Home",
+            "allCourse": "All Courses",
+            "pages": "Pages",
+            "blog": "Blog",
+            "contact": "Contact",
+            "signin": "Sign in",
+            "signup": "Sign up",
+            "signout": "Sign Out",
+            "language": "Persion"
+        },
+        "navDrop": {
+            "courses": "courses",
+            "courseDetail": "Courses Detail",
+            "about": "About",
+            "traffic": "Traffic and conversion",
+            "faq": "FAQ",
+            "blog": "Blog",
+            "blogDetail": "Blog Detail"
+        }
+    },
+
+    "home": {
+        "top": {
+            "start": "Start your favourite course",
+            "learning": "Now learning from anywhere, and build your",
+            "career": "bright career.",
+            "subTxt": "It has survived not only five centuries but also the leap into electronic typesetting.",
+            "registe": "Register Now"
+        },
+        "body": {
+            "all": "All",
+            "courses": "Courses",
+            "edule": "of Edule",
+            "search": "Search your course",
+            "ui": "UI/UX Design",
+            "develope": "Development",
+            "science": "Science",
+            "business": "Business",
+            "myCourse": "My Courses",
+            "courseType": "Course:",
+            "coachName": "Coach",
+            "lectures": "lectures",
+            "startNow": "Start Course",
+            "hour": "08 hr 15 mins",
+            "price": "$400",
+            "star": "4.9",
+            "otherCourse": "Ohter Course",
+            "instruct": "Become A Instructor",
+            "joinUs": "You can join with Edule as",
+            "asInstructor": "a instructor?",
+            "drop": "Drop Information",
+            "overThan": "Over 1,235 Course",
+            "how": "How It ",
+            "work": "Work?",
+            "find": "Find Your Course",
+            "findDesc": "It has survived not only centurie also leap into electronic.",
+            "bookOn": "Book A Seat",
+            "bookDesc": "It has survived not only centurie also leap into electronic.",
+            "getCrt": "Get Certificate",
+            "getCrtDesc": "It has survived not only centurie also leap into electronic."
+            
+        }
+    },
+
+    "appDownload": {
+        "ready": "Ready to start?",
+        "download": "Download our mobile app",
+        "start": "for easy to start your course."
+    },
+
+    "auth": {
+        "top": {
+            "home": "Home",
+            "linkName": "Registration",
+            "registe": "Registration",
+            "form": "Form"
+        },
+        "signin": {
+            "signin": "Sign in",
+            "now": "Now",
+            "email": "email",
+            "pass": "password",
+            "btnSignin": "Sign in"
+        },
+        "rgs": {
+            "haveAcoount": "Already Have an account?",
+            "signin": "Sign in",
+            "rgsWord": "Registration",
+            "now": "Now",
+            "nameInput": "full name*",
+            "nameRequire": "Name is required!",
+            "emailInput": "email*",
+            "emailRequire": "Email is required!",
+            "emailPattern": "Email is incorrect!",
+            "passInput": "password*",
+            "errInvalid": "Password is required!",
+            "errPassPattern": "Must Contain Numbers , Upercase , Lowercase",
+            "errLength": "Requires at least 6 characters!",
+            "confirm": "Confirm Password",
+            "errNotMatch": "Password doesn't match!",
+            "dateLable": "Your Birthday",
+            "gender": "Gender:",
+            "male": "Male",
+            "female": "Female",
+            "isStudent": "Are you School Student?",
+            "fileInput": "Add Your Photo",
+            "createAccount": "Create an account"
+        }
+    },
+
+    "footer": {
+        "main": {
+            "contact": {
+                "ct": "Caribbean Ct",
+                "subTxt": "Haymarket Virginia (VA).",
+                "emailAddress": "address@gmail.com",
+                "phone": "(970) 276-1413"
+            },
+            "category": {
+                "~": "Category",
+                "creative": "Creative Writing",
+                "film": "Film & Video",
+                "graphic": "Graghic Design",
+                "ui": "UI/UX Design",
+                "business": "Business Analytics",
+                "marketing": "Marketing"
+            },
+            "quick-links": {
+                "~": "Quick Links",
+                "privacy": "Privacy Policy",
+                "discuss": "Discussion",
+                "term": "Terms & Conditions",
+                "support": "Customer Support",
+                "faq": "Course FAQ's"
+            },
+            "subscribe": {
+                "~": "Subscribe",
+                "lorem": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum,molestiae.",
+                "emailHere": "Email Here",
+                "buttonSbc": "Subscribe Now"
+            }
+        },
+        "bottom": {
+            "term": "Term Of Service",
+            "privacy": "Privacy Policy",
+            "sitemap": "Sitemap",
+            "security": "Security",
+            "yearDate": "2024",
+            "edule": "EDULE",
+            "loveWord": "Made with love by",
+            "codecanva": "Codecanva"
+        }
+    }
+}
